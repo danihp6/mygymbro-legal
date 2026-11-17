@@ -5,7 +5,7 @@ web app (repository `gym-spotter`). Published with GitHub Pages:
 
 - https://danihp6.github.io/mygymbro-legal/
 - https://danihp6.github.io/mygymbro-legal/privacidad.html (Spanish privacy policy)
-- https://danihp6.github.io/mygymbro-legal/privacy.html (English privacy policy)
+- https://danihp6.github.io/mygymbro-legal/en/privacy.html (English privacy policy)
 
 These are the URLs the Play Console listing and the app point at. The app reads them from
 `frontend/src/app/core/legal.config.ts` in `gym-spotter`; changing a path here means changing that

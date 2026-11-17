@@ -1,0 +1,170 @@
+/* MyGymBro legal pages — one stylesheet, no build step. */
+:root {
+  color-scheme: light;
+  --ink: #16181d;
+  --muted: #5b6270;
+  --line: #e3e6ec;
+  --bg: #ffffff;
+  --accent: #2f5bff;
+  --surface: #f6f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+header.site {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+header.site a.brand {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+nav.langs {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+}
+
+nav.langs a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+nav.langs a[aria-current="page"] {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 8px 0 4px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 40px 0 8px;
+}
+
+p,
+li {
+  color: var(--ink);
+}
+
+.updated {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 32px;
+}
+
+a {
+  color: var(--accent);
+}
+
+ul {
+  padding-left: 22px;
+}
+
+li {
+  margin: 6px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 15px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+th {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin: 24px 0;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.index-list {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0;
+  display: grid;
+  gap: 12px;
+}
+
+.index-list a {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px 18px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.index-list a span {
+  display: block;
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+code {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1px 5px;
+  font-size: 14px;
+}
